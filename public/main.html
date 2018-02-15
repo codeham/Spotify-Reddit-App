@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<title>Spotify App</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css"> -->
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="col-sm-5">
+      <h1 class="display-4">Spotify App</h1>
+      <button id="authorize_spotify" type="button" class="btn btn-warning">Authorize</button>
+			<button id="create_playlist" type="button" class="btn btn-info">Test Payload</button>
+    </div>
+    <form class="mt-3" method="post" action="/api/playlist">
+      <div class="col-sm-5">
+        <div class="form-group">
+          <label for="playlist">Playlist Name</label>
+          <input name="playlist_name" type="text" class="form-control" id="playlist" placeholder="">
+        </div>
+				<!-- large text box -->
+				<div class="form-group">
+			    <label for="subreddit_box">Subreddits</label>
+			    <textarea name="subreddit_box" class="form-control" id="subreddit_box" rows="5"></textarea>
+			  </div>
+        <div class='text-left'>
+          <input class='btn btn-primary' type='submit' value='Generate'>
+        </div>
+    </form>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, Bootstrap JS, and Fullpage JS -->
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="scripts/main_script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
+  </script>
+
+
+</body>
+</html>
